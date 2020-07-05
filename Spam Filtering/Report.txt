@@ -1,0 +1,32 @@
+Assignment 1 Report
+
+Name: Sumanth Mothkuri
+
+1. Performance on the development data with 100% of the training data
+1a. spam precision: 0.9972423302309549
+1b. spam recall:  0.7872108843537415
+1c. spam F1 score: 0.8798661800486619
+1d. ham precision: 0.6561125769569042
+1e. ham recall: 0.9946666666666667
+1f. ham F1 score: 0.7906730259671436
+
+2. Performance on the development data with 10% of the training data
+2a. spam precision: 0.986021505376344
+2b. spam recall: 0.7485714285714286
+2c. spam F1 score:  0.851044083526682
+2d. ham precision: 0.6125786163522012
+2e. ham recall: 0.974
+2f. ham F1 score: 0.7521235521235522
+
+3. Description of enhancement(s) you tried (e.g., different approach(es) to smoothing, treating common words differently, dealing with unknown words differently):
+    I have used the following enhancements:
+    1) Used Regular expressions to consider only alphabets
+    2) Eliminated Unique tokens whose count in spam emails and ham emails are equal
+    3)Considered only those unique tokens whose count in spam emails and ham emails is more than one
+4. Best performance results based on enhancements. Note that these could be the same or worse than the standard implementation.
+4a. spam precision: 0.9955489614243324
+4b. spam recall: 0.9129251700680272
+4c. spam F1 score: 0.9524485450674236
+4d. ham precision:  0.8227146814404432
+4e. ham recall:  0.99
+4f. ham F1 score: 0.8986384266263238
