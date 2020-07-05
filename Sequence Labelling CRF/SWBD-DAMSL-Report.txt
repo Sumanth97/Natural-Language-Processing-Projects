@@ -1,0 +1,29 @@
+Assignment 2 Report
+
+Name: Sumanth Mothkrui
+
+1. Describe how you evaluated your baseline and advanced features:
+
+I divided the given dataset into training data and development data with 25% of the given training data shifted into development data.
+When I picked the files randomly, the accuracy was 70.8 and when I picked the last 25% of the files, the accuracy was 71.8. So I picked
+the latter. I trained the model with 75% of the data taken as training data. When the model has been trained, I tested it with the 25% of
+the data that I have shifted into testing directory i.e development data. I gave the testing data without act tags to the model and
+compared the act tags predicted by the model with the true act tags and calculated the accuracy by dividing the total true predictions
+with the total number of files tested.
+
+2. Accuracy of baseline features during your evaluation:
+The accuracy of baseline features is 0.718127 or 71.81%
+
+3. Describe your advanced feature set:
+My advanced feature set consists of the same features of baseline tagger i.e First person or not, monogram tokens and pos tags.
+In addition to that I have also considered bi grams, 2 token groups and 3 token groups, Interrogative statements, Agreement,
+Opinion, Acknowledgement, Answer statements. I have also considered the presence of interruptive tokens (um, uh-huh,etc),
+Abbrevations, Presence of Title and numbers as features.
+
+4. If you tried and rejected alternate advanced feature sets, please describe them:
+I have tried Tri grams as features but The accurace was decreased. The same happened for considering using only bi grmas, only
+bi and tri grams, single letter dialogue, Dialogues starting with because or As or I and dialogues containing I mean, I believe
+or it seems. As the accuracy was decreased, I rejected them and did not consider them for advanced feature tagging.
+
+5. Accuracy of advanced features was:
+the accuracy of advanced features is 0.737469 or 73.74%
